@@ -13,7 +13,7 @@ ul,li{
 	list-style:none;
 }
 a {
-	color: #000;
+	color: #fff;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -203,7 +203,7 @@ nav.navbar-custom div.navbar-header a{
 	font-weight: 600;
 }
 .navbar-custom a{
-	color:#000;
+	color:#fff;
 }
 
 .navbar-custom .nav li {
@@ -211,7 +211,16 @@ nav.navbar-custom div.navbar-header a{
 }
 
 
-.navbar-custom .nav li a:hover{
+.nav-mypage li{
+	float:left;
+	width: 100px;
+	height:30px;
+	margin:10px;
+	text-align:center;
+	line-height: 30px;
+}
+
+.nav-mypage li a:hover{
 	background-color: transparent;
 	-webkit-animation-name:flash;
 	-moz-animation-name:flash;
@@ -225,8 +234,8 @@ nav.navbar-custom div.navbar-header a{
 	// 25%,75%{opacity:0;}
 	//100%{transform-origin:center center;transform:rotate(360deg);}
 	0%,50%{transform:skew(10deg,10deg);}
-100%{transform:skew(0deg,0deg);}
-25%,75%{transform:skew(-10deg,-10deg);}
+	100%{transform:skew(0deg,0deg);}
+	25%,75%{transform:skew(-10deg,-10deg);}
 
 }
 
@@ -629,18 +638,22 @@ nav.navbar-custom div.navbar-header a{
 
 
 #section3{
-	//background: #91A0B2;
+	//background: #C5C5C3;
 	//background:linear-gradient(to bottom, #91A0B2 80%, #546270 100%);
-	background: linear-gradient(to bottom, #fff 0%, #ccc 100%);
+	//background: linear-gradient(to bottom, #fff 0%, #ccc 100%);
+	//background: radial-gradient(at 50% 50%, #fff, #ccc);
+	background: radial-gradient(at 50% 50%, #98C2C0, #636565);
+}
+#section3 .section-title{
+	margin-bottom:20px;
 }
 #section3 .section-title hr{
-	margin-top:25px;
 	height: 4px;
 	width: 70px;
 	text-align: center;
 	position: relative;
 	background: #F4D03F;
-	margin: 0 auto;
+	margin: 20px auto;
 	margin-bottom: 30px;
 	border: 0;
 }

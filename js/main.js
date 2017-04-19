@@ -30,12 +30,11 @@ $(function(){
 		$(this).click(function(){
 			$('.sections').css({'transition':'all 500ms ease','transform':`translateY(-${index*winHeight}px)`});
 		}).mouseout(function(){
-			$(this).css({'background-color':'rgba(0,0,0,0)'});
+			$(this).css({'background-color':'rgba(255,0,0,1)'});
 		});
 		$(this).mouseout(function(){
-			$(this).css({'background-color':'rgba(0,0,0,0)'});
+			$(this).css({'background-color':'rgba(255,0,0,1)'});
 		});
-
 
 	});
 
